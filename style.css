@@ -1,0 +1,330 @@
+/*
+
+    Theme name: GVallejos.com
+    Version: 1.0
+    Description: Tema principal para la página web GVallejos.com
+    Author: Gian Vallejos
+    Author URI: gvallejos.com
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --gv-blue: #3D75AD;
+    --gv-green: #3DADAA;
+    --gv-subtitle-gray: #D8D8D8;
+    --gv-black-gray: #858585;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Chivo Mono", monospace;
+    color: var(--gv-blue);
+}
+
+h1 {
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 96px;
+    color: var(--gv-green);  
+    text-transform: uppercase;  
+}
+
+h2 {
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container-lg {
+    position: relative;
+    margin: 0 auto !important;
+    width: 1200px;
+    z-index: 10;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+.f-size-xs {
+    font-size: 14px;
+}
+
+.p-left-xxs {
+    padding-left: 5px;
+}
+
+.p-top-lg {
+    padding-top: 58px;
+}
+
+.p-horizontal-xs {
+    padding: 15px 0px;
+}
+
+.p-bottom-xs {
+    padding-bottom: 15px;
+}
+
+.p-bottom-s {
+    padding-bottom: 30px;
+}
+
+.p-bottom-md {
+    padding-bottom: 55px;
+}
+
+.m-vertical-s {
+    margin: 30px 0px;
+}
+
+.m-right-xs {
+    margin-right: 12px;
+}
+
+.m-bottom-xs {
+    margin-bottom: 12px;
+}
+
+.m-bottom-s {
+    margin-bottom: 30px;
+}
+
+.m-bottom-md {
+    margin-bottom: 55px;
+}
+
+.m-bottom-lgg {
+    margin-bottom: 75px;
+}
+
+.m-top-xs {
+    margin-top: 25px;
+}
+
+.m-top-md {
+    margin-top: 50px;
+}
+
+.m-top-lg {
+    margin-top: 58px;
+}
+
+.m-top-lgg {
+    margin-top: 75px;
+}
+
+.m-right-xs {
+    margin-right: 15px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    padding: 22px 38px;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: var(--gv-blue);
+    color: var(--white);
+    border: none;
+    font-size: 20px;
+}
+
+.btn-green {
+    background-color: var(--gv-green);
+    border: none;
+    font-size: 20px;
+}
+
+.btn-blue:hover {
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--gv-blue);
+    border: 2px var(--gv-blue) solid;
+}
+
+.section-title {
+    color: var(--gv-blue);
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+/* Primary and Secondary Nav */
+.nav-bar {
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background-color: var(--gv-blue);    
+    z-index: 50;
+}
+
+.opacity-off {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left .main-social-item {
+    font-size: 24px;
+}
+
+/* Categoria */
+.cat-description {
+    display: inline-block;
+    width: 62%;
+}
+
+/* Footer */
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-social-item {
+    display: inline-block;
+}
+
+.footer-social-item a {
+    color: black;
+    font-size: 30px;
+}
+
+.footer-right p {
+    padding-bottom: 10px;
+}
+
+/* WP Content Block */
+.wp-content-block {
+    text-align: left;
+}
+
+.wp-content-block p {
+    padding: 10px 0px;
+}
+
+/* Forms */
+input [type=submit] {
+    font-size: 16px;
+    color: var(--white);
+}
+
+/* RESPONSIVE - Media Query */
+
+/* Less than 1400 px */
+@media only screen and (max-width: 1440px) {
+    .bg-img-wrapper {
+        top: 0px;
+    }
+
+    .container-lg {
+        max-width: 1200px;
+    }
+}
+
+/* Less than 1220 px */
+@media only screen and (max-width: 1220px) {
+    .container-lg {
+        max-width: 1000px;
+    }
+}
+
+/* Less than 1024 px */
+@media only screen and (max-width: 1024px) {
+    .container-lg {
+        max-width: 775px;
+        padding: 0px 5px;
+    }
+}
+
+/* Less than 800 px */
+@media only screen and (max-width: 800px) {
+    .container-lg {
+        max-width: 585px;
+    }
+
+    .bg-img-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Less than 601 px */
+@media only screen and (max-width: 601px) {
+    .container-lg {
+        max-width: 480px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        width: fit-content;
+    }
+}

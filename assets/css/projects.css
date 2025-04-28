@@ -1,0 +1,118 @@
+:root {
+    --py-1: #162542;
+    --py-2: #33AF73;
+    --py-3: #3D75AD;
+    --py-4: #AD663D;
+    --py-5: #503DAD;
+    --py-6: #ADA63D;
+    --py-7: #721D1E;
+    --py-8: #33ABAF;
+}
+
+.projects-flex {
+    display: flex;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.project-item {
+    position: relative;
+    width: 273px;
+    height: 215px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.project-item a {
+    display: block;
+}
+
+.project-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    opacity: 0.65;
+}
+
+.project-item a .project-item-brand {
+    opacity: 0;
+    transition: opacity .7s;
+}
+
+.project-item a:hover .project-item-brand {
+    opacity: 1;
+}
+
+.project-item-brand {    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.pj-color-1 {
+    background-color: var(--py-1);
+}
+
+.pj-color-2 {
+    background-color: var(--py-2);
+}
+
+.pj-color-3 {
+    background-color: var(--py-3);
+}
+
+.pj-color-4 {
+    background-color: var(--py-4);
+} 
+
+.pj-color-5 {
+    background-color: var(--py-5);
+}
+
+.pj-color-6 {
+    background-color: var(--py-6);
+}
+
+.pj-color-7 {
+    background-color: var(--py-7);
+}
+
+.pj-color-8 {
+    background-color: var(--py-8);
+} 
+
+/* Detail */
+.project-description-img-wrapper {
+    width: 100%;
+}
+
+.project-description {
+    width: 54%;
+}
+
+.project-description-img {
+    width: 100%;
+}
+
+/* Less than 1024 px */
+@media only screen and (max-width: 1024px) {
+    .project-item {
+        display: flex;
+        justify-content: center;
+        width: 180px;
+    }
+
+    .project-description {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+}
