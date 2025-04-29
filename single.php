@@ -3,6 +3,18 @@
 
     <?php get_template_part('blog/post-image'); ?>
 
+    <div class="post-container-wrapper">
+        <div class="post-container-left">
+            <div class="post-content">
+                <?php the_content(); ?>
+            </div>
+            <?php get_template_part('blog/post-categories'); ?>
+        </div>
+        <div class="post-container-right">
+            <?php get_template_part('template-parts/sidebar'); ?>
+        </div>
+    </div>
+
 </div>
 
 
@@ -34,9 +46,5 @@ right
     side-bar
 
 
-
-<div>
-    <?php get_template_part('template-parts/sidebar'); ?>
-</div>
 
 <?php get_footer(); ?> 
