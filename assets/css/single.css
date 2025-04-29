@@ -1,3 +1,14 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --gv-blue: #3D75AD;
+    --gv-green: #3DADAA;
+    --gv-subtitle-gray: #D8D8D8;
+    --gv-black-gray: #858585;
+}
+
+/* Post Image */
+
 .post-image {
     position: relative;
     width: 100%;
@@ -7,7 +18,12 @@
     margin-bottom: 45px;
 }
 
-.post-image .overlay {
+.post-image h1 {
+    font-family: "Inter", sans-serif;
+}
+
+.post-image .overlay,
+.post-more-item .overlay {
     position: absolute;
     top: 0;
     width: 100%;
@@ -49,7 +65,7 @@
 
 .post-author-info {
     padding-top: 6px;
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
 }
 
@@ -76,7 +92,7 @@
 
 .post-details {
     display: flex;
-    color: #fff;
+    color: var(--white);
     font-weight: 600;
     padding-top: 20px;
     font-size: 16px;
@@ -87,6 +103,8 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+
+/* Post Content */
 
 .post-container-wrapper {
     display: flex;
@@ -107,7 +125,8 @@
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-    color: black;
+    font-family: "Inter", sans-serif;
+    color: var(--black);
     padding: 18px 0px;
 }
 
@@ -125,15 +144,16 @@
 }
 
 .post-content a {
-    color: #3D75AD;
+    color: var(--gv-blue);
 }
 
+/* Post Categories */
 .post-categories {
     height: 185px;
     display: flex;
     align-items: center;
-    border-top: 1px solid #D9D9D9;
-    border-bottom: 1px solid #D9D9D9;
+    border-top: 1px solid var(--gv-subtitle-gray);
+    border-bottom: 1px solid var(--gv-subtitle-gray);
     justify-content: space-between;
 }
 
@@ -143,16 +163,97 @@
 }
 
 .written-by-tag {
-    color: #858585;
+    color: var(--gv-black-gray);
     font-size: 13px;
 }
 
 .written-author-name {
-    color: #000;
+    color: var(--black);
     font-size: 21px;
     font-weight: 600;
 }
 
+.written-author-name a {
+    color: var(--black);
+}
+
 .post-categories-wrapper {
     display: flex;
+}
+
+.btn-category {
+    padding: 15px 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Post Tags */
+.post-tags {
+    padding: 30px 0px;
+    border-bottom: 1px solid var(--gv-subtitle-gray);
+}
+
+.post-tags-wrapper {
+    display: flex;
+}
+
+.btn-tag {
+    padding: 5px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: var(--gv-subtitle-gray);
+    color: var(--black);
+}
+
+/* Share Article */
+.post-share {
+    padding: 64px 0px;
+}
+
+.post-share-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.post-share-wrapper span {
+    font-size: 24px;
+    color: var(--gv-black-gray);
+}
+
+.post-share-icons-wrapper {
+    margin-left: 12px;
+}
+
+.post-share-icons-wrapper a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.btn-share {
+    color: var(--gv-blue);
+    font-size: 42px;
+}
+
+/* Post More */
+.post-more-item-wrapper {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.post-more-item {
+    position: relative;
+    width: 365px;
+    height: 332px;
+    overflow: hidden;
+}
+
+.post-more-item img {
+    height: 100%;
+}
+
+.post-more-info,
+.post-more-author {
+    position: absolute;
+    z-index: 999;
 }

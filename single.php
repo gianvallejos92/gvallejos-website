@@ -9,42 +9,22 @@
                 <?php the_content(); ?>
             </div>
             <?php get_template_part('blog/post-categories'); ?>
+            <?php get_template_part('blog/post-tags'); ?>
+            <?php get_template_part('blog/share-article'); ?>
         </div>
         <div class="post-container-right">
             <?php get_template_part('template-parts/sidebar'); ?>
         </div>
     </div>
 
+    <div class="about-cta m-top-xs ">
+        <a href="#" class="btn btn-green">
+            Leave me a Comment
+        </a>
+    </div>
+
+    <?php get_template_part('blog/post-more'); ?>
+
 </div>
-
-
-left
-    post-content
-
-    /* Category, tags apart */
-    post-categories
-        post-writeen-by
-            author-img
-            Written by
-            author-name
-        post-all-categories
-            post-category-wrapper
-                Associates
-            post-category-wrapper
-                Salesforce
-    post-tags
-        post-tag-wrapper
-            Data Model
-        post-tag-wrapper
-            Roll-up
-    post-share-article
-        Share this Article
-        icon-linkedin
-        icon-twitter
-
-right
-    side-bar
-
-
 
 <?php get_footer(); ?> 

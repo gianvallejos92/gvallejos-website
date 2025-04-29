@@ -173,19 +173,18 @@ li {
     display: inline-block;
     padding: 22px 38px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .btn-blue {
     background-color: var(--gv-blue);
     color: var(--white);
     border: none;
-    font-size: 20px;
 }
 
 .btn-green {
     background-color: var(--gv-green);
     border: none;
-    font-size: 20px;
 }
 
 .btn-blue:hover {
@@ -193,6 +192,13 @@ li {
     background-color: var(--white);
     color: var(--gv-blue);
     border: 2px var(--gv-blue) solid;
+}
+
+.btn-green:hover {
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--gv-green);
+    border: 2px var(--gv-green) solid;
 }
 
 .section-title {
